@@ -3,7 +3,7 @@
 # 
 # Copyright (C) 2020 KFERMercer <KFER.Mercer@gmail.com>
 # 
-# <https://github.com/KFERMercer/OpenWrt-CI>
+# <https://github.com/qianyong256/OpenWrt-CI>
 #
 
 name: Merge-upstream
@@ -36,7 +36,7 @@ jobs:
         git config --global user.name "github-actions[bot]"
 
     - name: Load upstream commits
-      run: git pull https://github.com/coolsnowwolf/lede.git --log --no-commit
+      run: git pull https://github.com/qianyong256/lede.git --log --no-commit
 
     - name: Apply commit changes
       run: |
